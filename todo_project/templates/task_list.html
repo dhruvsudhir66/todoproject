@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="card p-3 shadow m-5">
+        <div class="card-body style-class">
+            {% for i in task %}
+           <h4>{{i.name}}</h4>
+            <p>{{i.description}}</p>
+            <hr>
+<!--            <a class="border p-2 shadow hello" href="{% url 'task-detail' i.id %}">View</a>-->
+            <a class="border p-2 shadow" href="{% url 'task-update' i.id %}">Update</a>
+            <a class="border p-2 shadow" href="{% url 'task-delete' i.id %}">Delete</a><br>
+            <hr>
+            {% endfor %}
+            <h5><a href="{% url 'task-create' %}">Add Tasks</a></h5>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+.style-class a{
+text-decoration : none;
+color:white;
+font-size : 15px;
+margin :15px;
+font-family :verdana;
+}
+body{
+background-color:#6610f2;
+}
+.style-class{
+background-color :#6f42c1;
+}
+.header a{
+color: white;
+font-size :40px;
+}
+.header a:hover{
+color:gray;
+}
+.style-class h4{
+color:white;
+font-family:verdana;
+font-weight:900;
+}
+.style-class p{
+color:white;
+font-family:verdana;
+}
